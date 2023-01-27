@@ -1,0 +1,56 @@
+
+.promo{
+    width: 100%;
+    padding-right: 17px;
+    padding-left: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.promo_wrapper{
+    margin: 70px;
+    padding: 10px;
+    display: flex;
+    /*flex-direction: column;*/
+    /*min-width: 600px*/
+    /* Можно адптировать под планшеты*/
+    justify-content: space-between;
+    box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    background-color: white;
+    column-gap: 20px;
+
+}
+.promo_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.promo_item  button{
+display: block;
+    min-width: 170px;
+    max-width: 70px;
+    height: 40px;
+    font-size: 15px;
+    border: 3px solid black;
+    margin-top: 7px;
+}
+.promo_title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 5px;
+border-bottom: 3px solid black;
+}
+.promo_descr{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+
+}
