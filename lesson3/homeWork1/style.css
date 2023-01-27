@@ -1,4 +1,5 @@
 .widgets{
+    margin: 0 auto;
 width: 900px;
     height: 1200px;
 display: flex;
