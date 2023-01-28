@@ -23,7 +23,7 @@ justify-content: center;
     justify-content: center;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.41)
 }
-.widget_widgets{
+.widget_wrapper{
     width: 600px;
     display: flex;
     align-items: center;
