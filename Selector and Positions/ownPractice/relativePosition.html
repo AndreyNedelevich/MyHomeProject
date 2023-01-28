@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            background: silver;
+            width: 700px;
+            height: 700px;
+            position: relative;
+            top: 25px;
+            right: -100px;
+        }
+        .box1 {
+            width: 150px;
+            height: 150px;
+            background: red;
+            position: absolute;
+            /*top: 900px;*/
+        }
+        /*При абсолютоном позиционирование элементы перемещаються по экрану на при этом не кому не мешают и не ломают верстку.*/
+
+        /*При абсолютном позиционировании элементы могут накладываться один на один. Но при этом они могут передвигаться
+          по странице в любую сторону.*/
+        /* Но при этом если если родителям абсолютно спозиционированных элементов будет с свойство position Relative то его
+          насследник будеь отталкиваться от его границ Нулевых границ Если родителя нет с Relative то он отталкиваеться от
+          краев Body*/
+
+        .box2 {
+          width: 200px;
+          height: 200px;
+          background: green;
+          /*position: absolute;*/
+        /*top: 10px;*/
+        }
+        .box3 {
+            width: 250px;
+            height: 250px;
+            background: blue;
+            position: absolute;
+            /*bottom: 550px;*/
+        }
+        /*<При использовании z -index мы можем менть преоритет отображения если блоки налажились один на один  . Элемент с большим индексом*/
+        /*будет отображаться сверху. Другого элемента.-->
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+<!--При абсолютоном позиционирование элементы перемещаються по экрану на при этом не кому не мешают и не ломают верстку.
+При абсолютном позиционировании элементы могут накладываться один на один. Но при этом они могут передвигаться по странице в любую сторону.
+-->
+<!--При использовании z -index мы можем менть преоритет отображения если блоки налажились один на один  . Элемент с большим индексом
+будет отображаться сверху. Другого элемента.-->
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .target {
+            width: 200px;
+            height: 200px;
+            background: #000;
+            transition: 300ms;
+        }
+
+        .target:hover {
+            background: silver;
+        /*    Псевдокласс поведения*/
+
+        }
+        /*Обращение по атрибуту*/
+        input[type='text'] {
+            background: silver;
+        }
+        /*Обращение ко всем элемента у которых есть placeholder будут менять цвет*/
+        input[placeholder] {
+            background: silver;
+        }
+        .target ~ p {
+            background: cornflowerblue;
+            /*.target +  p   (+) когда мы указываем межде селекторами + это означает что мы обращаемся тольео к соседнему элементу.
+             Будет застелизованный соседний к ДИВУ ПАРАГРАФ*/
+            /* .target ~ p  (~) будет означать в отличии от (+) все соседние элементы.*/
+        }
+
+    </style>
+</head>
+<body>
+
+<!--                                  ВЛОЖЕННОСТЬ СИЛЕКТОРОВ-->
+<!--Когда мы обращаемся от класса  к (тегу например к li ) через пробел то стили будут применены ко всем li которые входят в этот класс
+независимо от вложенности -->
+
+<!--Eсли между классом и селекотором поставит знак (>) Benefits1 > li то стили будут применныы только для прямих наследников
+но те li которые буду вложеннв в div и так далле не получат эти стили.-->
+
+
+
+
+<div class="target"></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam minus molestias voluptatum. Architecto
+    debitis, fugit magni nostrum quis recusandae! Aut, dolorum error expedita facere nam natus nihil numquam
+    officiis.</p>
+
+
+<form>
+    <input placeholder=" enter username" type="text" name="username">
+    <input placeholder=" enter username" type="text" name="surname">
+    <input placeholder=" enter password" type="password" name="password">
+    <input placeholder="enter age" type="number" name="age">
+    <input placeholder="go email" type="email" name="email">
+    <button>send</button>
+</form>
+
+
+<!--<div class="target"></div>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam minus molestias voluptatum. Architecto-->
+<!--    debitis, fugit magni nostrum quis recusandae! Aut, dolorum error expedita facere nam natus nihil numquam-->
+<!--    officiis.</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, quod.</p>-->
+<!--<div>-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, quod.</p>-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, quod.</p>-->
+<!--</div>-->
+
+</body>
+</html>
