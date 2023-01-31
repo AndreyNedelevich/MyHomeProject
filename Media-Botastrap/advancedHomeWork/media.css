@@ -1,0 +1,125 @@
+@media (max-width: 1439px) {
+    /*!*X-Large*!*/
+    /*@media screen and (min-width: 1200px ) and (max-width: 1400px) {}*/
+
+}
+
+@media (max-width: 1200px) {
+    /*!*Large*!*/
+    /*@media screen and (min-width: 992px ) and (max-width: 1200px) {} */
+
+}
+
+@media (max-width: 992px) {
+    /*!*Medium*!*/
+    /*@media screen and (min-width: 768px ) and (max-width: 992px) {}*/
+
+
+}
+
+@media (max-width: 768px) {
+    /*!*Small*!*/
+    /*@media screen and (min-width: 576px ) and (max-width: 768px) {}*/
+    .conteiners {
+        padding: 10px 7px;
+        width: 767px;
+    }
+    .header {
+        position: relative;
+        height: 130px;
+        margin: 5px;
+        display: grid;
+        padding: 1px 2px;
+        border-radius: 8px;
+    }
+    .hamburger {
+        position: absolute;
+        top: 35px;
+        right: 9px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+    .hamburger span {
+        display: block;
+        width: 70px;
+        height: 6px;
+        background: white;
+        margin-bottom: 2px;
+    }
+
+    .logo {
+        background: url(./imegis/Blue-Big-Bird-Final-Logo.png) center center/contain no-repeat;
+        border: 2px solid #d36c71;
+        background-color: white;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .logo > img {
+        display: none;
+    }
+
+    .header_form {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_content {
+        margin-left: 6px;
+    }
+
+    .footer_nav li {
+        font-size: 20px;
+    }
+    .grid_forms{
+        column-gap:0;
+    }
+
+    .btn_show{
+        position: relative;
+        top: -50px;
+        width: 172px;
+        height: 55px;
+        box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 8px;
+        background: red;
+        text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+@media (max-width: 576px) {
+    /*XS size*/
+    /*@media screen and (min-width: 0 ) and (max-width: 575px) {}*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
