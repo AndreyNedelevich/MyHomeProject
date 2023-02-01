@@ -141,7 +141,9 @@ display: none;
     margin-top: 5px;
     border-radius: 5px;
 }
-
+.wrapper_btn{
+    display: none;
+}
 .batton{
     display: block;
     border-radius: 6px;
@@ -153,6 +155,7 @@ display: none;
     transition: background-color .45s ease-in-out;
     color: darkblue;
 }
+
 .batton:hover {
     background-color: #bdbdbd;
 }

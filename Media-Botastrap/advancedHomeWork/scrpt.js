@@ -4,11 +4,16 @@ const closeElem = document.querySelector(".menu__close");
 const closeElement = document.querySelector(".menu__overlay");
 
 const modalWindow = document.querySelector('.modal-window');
+
 const overlay = document.querySelector('.overlay');
 const btnCloseModalWindow = document.querySelector('.btn--close-modal-window');
-const btnsSHowModalWindow = document.querySelector(
-    '.btn_show'
+
+
+const btnsSHowModalWindow = document.getElementById(
+    'show_modal'
 );
+
+
 
 hamburger.addEventListener("click", () => {
     menu.classList.add("active");
@@ -38,5 +43,6 @@ const closeModalWindow = function () {
 btnsSHowModalWindow.addEventListener('click', openModalWindow);
 
 btnCloseModalWindow.addEventListener('click', closeModalWindow);
+
 overlay.addEventListener('click', closeModalWindow);
 
