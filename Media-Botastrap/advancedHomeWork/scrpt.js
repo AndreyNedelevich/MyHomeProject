@@ -14,7 +14,6 @@ const btnsSHowModalWindow = document.getElementById(
 );
 
 
-
 hamburger.addEventListener("click", () => {
     menu.classList.add("active");
 });
